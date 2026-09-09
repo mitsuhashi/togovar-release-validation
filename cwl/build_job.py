@@ -9,6 +9,8 @@ if not a.chrom_map.is_file(): raise SystemExit(f"missing chromosome map: {a.chro
 for reference in (a.grch37_reference, a.grch38_reference):
  if not reference.is_file(): raise SystemExit(f"missing reference FASTA: {reference}")
  if not Path(str(reference)+".fai").is_file(): raise SystemExit(f"missing reference FASTA index: {reference}.fai")
+a.grch37_reference = a.grch37_reference.resolve()
+a.grch38_reference = a.grch38_reference.resolve()
 groups = OrderedDict()
 with a.manifest.open() as f:
  for r in csv.reader(f, delimiter="\t"):

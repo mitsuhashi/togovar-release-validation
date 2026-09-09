@@ -212,7 +212,7 @@ for manifest in results/20241203_to_2026.1/batches/grch37-tommo/batch-*.tsv; do
     --old-root /mnt/nas05/togovar/public/downloads/release/20241203 \
     --new-root /mnt/nas05/togovar/public/downloads/release/.2026.1 \
     --chrom-map cwl/rename_chrom.tsv \
-    --grch37-reference reference/GRCh37.hg19.canonical.fa \
+    --grch37-reference "$PWD/reference/GRCh37.hg19.canonical.fa" \
     --grch38-reference /mnt/nas05/togovar/original/grch38/reference_genome/Homo_sapiens.GRCh38.dna.primary_assembly.fa \
     --output "results/20241203_to_2026.1/batches/grch37-tommo/${name}.json"
   /home/togovar/.local/bin/cwltool \
