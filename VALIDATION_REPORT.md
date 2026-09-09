@@ -166,16 +166,38 @@ GRCh37参照を`GRCh37.hg19.canonical.fa`へ変更し、現在の`job.refnorm.js
 | GRCh37 | `gem_j_wga` | 13 | 2, 3, 4, 6, 7, 10, 11, 16, 17, 19, 20, 21, X | VCFが1～3件多い |
 | GRCh37 | `gnomad_exomes` | 1 | 1 | APIが1件多い |
 | GRCh37 | `gnomad_genomes` | 13 | 1, 2, 3, 5, 10, 11, 12, 13, 16, 17, 19, 21, 22 | APIが1～5件多い |
-| GRCh37 | `jga_snp` | 1 | MT | VCF 5件、API 0件 |
-| GRCh37 | `jga_wes` | 1 | MT | VCF 224件、API 0件 |
-| GRCh37 | `tommo` | 1 | MT | VCF 3,503件、API 0件 |
+| GRCh37 | `jga_snp` | 1 | MT | **VCFのみ5件、APIのみ0件** |
+| GRCh37 | `jga_wes` | 1 | MT | **VCFのみ224件、APIのみ0件** |
+| GRCh37 | `tommo` | 1 | MT | **VCFのみ3,503件、APIのみ0件** |
 | GRCh38 | `gnomad_exomes` | 8 | 3, 7, 8, 11, 13, 16, 20, 22 | APIが1～2件多い |
 | GRCh38 | `gnomad_genomes` | 23 | 1～22, X | APIが4～31件多い |
-| GRCh38 | `jga_snp` | 1 | MT | VCF 4件、API 0件 |
-| GRCh38 | `jga_wes` | 1 | MT | VCF 54件、API 0件 |
+| GRCh38 | `jga_snp` | 1 | MT | **VCFのみ4件、APIのみ0件** |
+| GRCh38 | `jga_wes` | 1 | MT | **VCFのみ54件、APIのみ0件** |
 | GRCh38 | `jogo` | 23 | 1～22, X | APIが2～24件多い |
 
 GRCh37の不一致は30区分、GRCh38の不一致は56区分であり、合計86区分である。
+
+#### APIが0件のMT区分の解釈
+
+`VCFのみ4件、APIのみ0件`は、当該の`assembly × dataset × MT`区分で、VCFに
+正規化済みalleleが4件あり、APIの同じdatasetにはalleleが1件もないことを示す。
+API側の集合が空なので、VCF側の4件はすべてAPIに未反映であると判断できる。
+これは「VCF 5件、API 1件」のように一部だけが未反映という意味ではない。
+
+GRCh38 `jga_snp`のMTでは、この状態が確認されている。単なる少数の正規化差よりも、
+次の投入・公開設定上の問題を優先して調査する。
+
+1. MTデータ自体がETLの入力対象から漏れた。
+2. `MT`、`M`、`chrM`などのcontig名変換で除外された。
+3. indexへの投入後に、staging APIが参照するaliasへ反映されていない。
+4. MTが意図的に公開対象外となる設定がある。
+
+ただし、件数だけから「追加し忘れ」と断定はしない。ETLの入力、変換、index登録、
+alias反映の各段階でMTが存在するかを順に確認する。
+
+一方、`VCFが1～3件多い`や`APIが4～31件多い`は、不一致染色体ごとの**件数差**である。
+両方に多数のalleleが存在するため、どのalleleがVCFのみ・APIのみかは、この件数表だけでは
+特定できない。原因調査では正規化済みallele keyの集合差を取得する。
 
 正式結果は`api-vcf-final/api-vcf-counts.tsv`と
 `api-vcf-final/api-vcf-mismatches.tsv`を参照する。
