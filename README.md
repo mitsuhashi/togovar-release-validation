@@ -184,9 +184,49 @@ cwltool --parallel \
   --cachedir "$PWD/results/20241203_to_2026.1/cwl-refnorm-cache" \
   --outdir results/20241203_to_2026.1/cwl-refnorm-outputs \
   --write-summary results/20241203_to_2026.1/cwl-refnorm-output.json \
-  cwl/release_vcf_keys.cwl \
+cwl/release_vcf_keys.cwl \
   results/20241203_to_2026.1/job.refnorm.json
 ```
+
+#### 大規模scatterが停止した場合の分割再開
+
+`cwltool --parallel`が多数のscatter jobを開始できず、CPU使用だけが継続して
+結果ファイルが増えない場合は、そのプロセスを停止し、datasetごと・最大50論理比較ごとに
+分割して**逐次**実行します。既存の`--cachedir`を使うため、完了済み比較は再利用されます。
+
+次はGRCh37 `tommo`の例です。`split_manifest.py`は同じ旧VCFに対応する複数の新版VCFを
+同じbatchに保持するため、1対多比較を分断しません。
+
+```bash
+cd /data/togovar/etl/togovar-etl/2026.1
+
+python3 cwl/split_manifest.py \
+  results/20241203_to_2026.1/mapping-reviewed/vcf_pair_manifest.ready.tsv \
+  --prefix grch37/frequency/vcf/tommo/ \
+  --max-pairs 50 \
+  --output-dir results/20241203_to_2026.1/batches/grch37-tommo
+
+for manifest in results/20241203_to_2026.1/batches/grch37-tommo/batch-*.tsv; do
+  name=$(basename "$manifest" .tsv)
+  python3 cwl/build_job.py "$manifest" \
+    --old-root /mnt/nas05/togovar/public/downloads/release/20241203 \
+    --new-root /mnt/nas05/togovar/public/downloads/release/.2026.1 \
+    --chrom-map cwl/rename_chrom.tsv \
+    --grch37-reference reference/GRCh37.hg19.canonical.fa \
+    --grch38-reference /mnt/nas05/togovar/original/grch38/reference_genome/Homo_sapiens.GRCh38.dna.primary_assembly.fa \
+    --output "results/20241203_to_2026.1/batches/grch37-tommo/${name}.json"
+  /home/togovar/.local/bin/cwltool \
+    --tmpdir-prefix "$PWD/results/20241203_to_2026.1/tmp/jobs/" \
+    --cachedir "$PWD/results/20241203_to_2026.1/cwl-refnorm-cache" \
+    --outdir "results/20241203_to_2026.1/cwl-refnorm-outputs-resume/${name}" \
+    --write-summary "results/20241203_to_2026.1/cwl-refnorm-output-${name}.json" \
+    cwl/release_vcf_keys.cwl \
+    "results/20241203_to_2026.1/batches/grch37-tommo/${name}.json"
+done
+```
+
+`--prefix`を`grch38/frequency/vcf/ncbn/`など対象datasetの相対パスへ変更して同様に実行します。
+新しい出力先を指定しても、同じcacheを指定する限り完了済み比較は再計算しません。
 
 Toil を使用する場合：
 
