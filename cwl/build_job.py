@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Create a CWL job JSON from a two-column VCF pair manifest."""
-import argparse, csv, json
+import argparse, csv, json, os
 from collections import OrderedDict
 from pathlib import Path
 p=argparse.ArgumentParser(); p.add_argument("manifest", type=Path); p.add_argument("--old-root", type=Path, required=True); p.add_argument("--new-root", type=Path, required=True); p.add_argument("--chrom-map", type=Path, required=True); p.add_argument("--grch37-reference", type=Path, required=True); p.add_argument("--grch38-reference", type=Path, required=True); p.add_argument("--output", type=Path, required=True)
@@ -9,8 +9,11 @@ if not a.chrom_map.is_file(): raise SystemExit(f"missing chromosome map: {a.chro
 for reference in (a.grch37_reference, a.grch38_reference):
  if not reference.is_file(): raise SystemExit(f"missing reference FASTA: {reference}")
  if not Path(str(reference)+".fai").is_file(): raise SystemExit(f"missing reference FASTA index: {reference}.fai")
-a.grch37_reference = a.grch37_reference.resolve()
-a.grch38_reference = a.grch38_reference.resolve()
+# Make paths absolute for CWL job files, but preserve a reference symlink and
+# its colocated .fai.  Path.resolve() would replace a curated local reference
+# link with its target, whose index may use a different contig convention.
+a.grch37_reference = Path(os.path.abspath(a.grch37_reference))
+a.grch38_reference = Path(os.path.abspath(a.grch38_reference))
 groups = OrderedDict()
 with a.manifest.open() as f:
  for r in csv.reader(f, delimiter="\t"):
