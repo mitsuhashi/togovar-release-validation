@@ -103,21 +103,8 @@ keyの集合差`old - new`は、いずれも0件だった。
 `cwl-refnorm-cache`を再利用しているため、最終出力はワークフロー全体の完了時に
 `cwl-refnorm-outputs/`へ集約される。
 
-以前の実行は、GRCh37の一部で次の警告を出した後、CWLが`permanentFail`で停止した。
-
-- JGA SNP：`MT:15951` のREF不一致
-- JGA WES：`Y:2649476` のREF不一致
-- 併せてBGZFストリームの終端警告と終了コード255が発生
-
-前回ログでは`Homo_sapiens.GRCh37.dna.primary_assembly.fa`が使われていた。その後、
-GRCh37参照を`GRCh37.hg19.canonical.fa`へ変更し、現在の`job.refnorm.json`にもその
-参照を明示した。エラー対象だった旧JGA SNP VCFを現在の参照で同じ
-`annotate → norm → query`処理に通した確認では、各コマンドが終了コード0となり、
-1,249,724 alleleを最後まで処理できた。
-
-現在の再実行では、GRCh37参照を`GRCh37.hg19.canonical.fa`へ変更したjob JSONと
-既存の`cwl-refnorm-cache`を使用している。再実行が全件完了するまでは、上表の
-部分結果だけからリリース全体の合否を出さない。
+現在のjob JSONでは、GRCh37参照に`GRCh37.hg19.canonical.fa`を明示している。
+再実行が全件完了するまでは、上表の部分結果だけからリリース全体の合否を出さない。
 
 ## 4. 2026.1 VCFとstaging APIの比較
 
