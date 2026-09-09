@@ -1,0 +1,451 @@
+release	assembly	chromosome	dataset	vcf_count	api_count	delta	status	likely_cause	recommended_action
+new	GRCh37	1	gem_j_wga	7543101	7543101	0	match		
+new	GRCh37	2	gem_j_wga	7979076	7979074	-2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	3	gem_j_wga	6448888	6448887	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	4	gem_j_wga	6312427	6312426	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	5	gem_j_wga	5873939	5873939	0	match		
+new	GRCh37	6	gem_j_wga	5577482	5577481	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	7	gem_j_wga	5418179	5418178	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	8	gem_j_wga	5056403	5056403	0	match		
+new	GRCh37	9	gem_j_wga	4267688	4267688	0	match		
+new	GRCh37	10	gem_j_wga	4485955	4485953	-2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	11	gem_j_wga	4468415	4468414	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	12	gem_j_wga	4348786	4348786	0	match		
+new	GRCh37	13	gem_j_wga	3171640	3171640	0	match		
+new	GRCh37	14	gem_j_wga	3011964	3011964	0	match		
+new	GRCh37	15	gem_j_wga	2890771	2890771	0	match		
+new	GRCh37	16	gem_j_wga	3192190	3192189	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	17	gem_j_wga	2765216	2765215	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	18	gem_j_wga	2492639	2492639	0	match		
+new	GRCh37	19	gem_j_wga	2277000	2276999	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	20	gem_j_wga	2031862	2031861	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	21	gem_j_wga	1373709	1373706	-3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	22	gem_j_wga	1348291	1348291	0	match		
+new	GRCh37	MT	gem_j_wga	0	0	0	match		
+new	GRCh37	X	gem_j_wga	3527816	3527815	-1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	Y	gem_j_wga	0	0	0	match		
+new	GRCh37	1	gnomad_exomes	1707146	1707147	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	2	gnomad_exomes	1230614	1230614	0	match		
+new	GRCh37	3	gnomad_exomes	958850	958850	0	match		
+new	GRCh37	4	gnomad_exomes	642129	642129	0	match		
+new	GRCh37	5	gnomad_exomes	740678	740678	0	match		
+new	GRCh37	6	gnomad_exomes	835212	835212	0	match		
+new	GRCh37	7	gnomad_exomes	845891	845891	0	match		
+new	GRCh37	8	gnomad_exomes	621220	621220	0	match		
+new	GRCh37	9	gnomad_exomes	713431	713431	0	match		
+new	GRCh37	10	gnomad_exomes	665745	665745	0	match		
+new	GRCh37	11	gnomad_exomes	1044543	1044543	0	match		
+new	GRCh37	12	gnomad_exomes	889014	889014	0	match		
+new	GRCh37	13	gnomad_exomes	287655	287655	0	match		
+new	GRCh37	14	gnomad_exomes	589647	589647	0	match		
+new	GRCh37	15	gnomad_exomes	611216	611216	0	match		
+new	GRCh37	16	gnomad_exomes	866022	866022	0	match		
+new	GRCh37	17	gnomad_exomes	1031902	1031902	0	match		
+new	GRCh37	18	gnomad_exomes	253290	253290	0	match		
+new	GRCh37	19	gnomad_exomes	1231680	1231680	0	match		
+new	GRCh37	20	gnomad_exomes	429586	429586	0	match		
+new	GRCh37	21	gnomad_exomes	187702	187702	0	match		
+new	GRCh37	22	gnomad_exomes	416866	416866	0	match		
+new	GRCh37	MT	gnomad_exomes	0	0	0	match		
+new	GRCh37	X	gnomad_exomes	403070	403070	0	match		
+new	GRCh37	Y	gnomad_exomes	6862	6862	0	match		
+new	GRCh37	1	gnomad_genomes	20370889	20370890	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	2	gnomad_genomes	21892242	21892245	3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	3	gnomad_genomes	17834352	17834355	3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	4	gnomad_genomes	17423639	17423639	0	match		
+new	GRCh37	5	gnomad_genomes	16290653	16290654	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	6	gnomad_genomes	15190442	15190442	0	match		
+new	GRCh37	7	gnomad_genomes	14752321	14752321	0	match		
+new	GRCh37	8	gnomad_genomes	14073574	14073574	0	match		
+new	GRCh37	9	gnomad_genomes	11480614	11480614	0	match		
+new	GRCh37	10	gnomad_genomes	12118745	12118750	5	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	11	gnomad_genomes	12345490	12345492	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	12	gnomad_genomes	11933433	11933435	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	13	gnomad_genomes	8693570	8693573	3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	14	gnomad_genomes	8220638	8220638	0	match		
+new	GRCh37	15	gnomad_genomes	7723667	7723667	0	match		
+new	GRCh37	16	gnomad_genomes	8618654	8618657	3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	17	gnomad_genomes	7373817	7373819	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	18	gnomad_genomes	6893751	6893751	0	match		
+new	GRCh37	19	gnomad_genomes	5991868	5991870	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	20	gnomad_genomes	5516836	5516836	0	match		
+new	GRCh37	21	gnomad_genomes	3482998	3483000	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	22	gnomad_genomes	3567084	3567085	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh37	MT	gnomad_genomes	0	0	0	match		
+new	GRCh37	X	gnomad_genomes	10153029	10153029	0	match		
+new	GRCh37	Y	gnomad_genomes	0	0	0	match		
+new	GRCh37	1	jga_snp	99374	99374	0	match		
+new	GRCh37	2	jga_snp	100928	100928	0	match		
+new	GRCh37	3	jga_snp	85641	85641	0	match		
+new	GRCh37	4	jga_snp	77187	77187	0	match		
+new	GRCh37	5	jga_snp	78156	78156	0	match		
+new	GRCh37	6	jga_snp	86833	86833	0	match		
+new	GRCh37	7	jga_snp	67891	67891	0	match		
+new	GRCh37	8	jga_snp	67772	67772	0	match		
+new	GRCh37	9	jga_snp	60025	60025	0	match		
+new	GRCh37	10	jga_snp	67000	67000	0	match		
+new	GRCh37	11	jga_snp	63025	63025	0	match		
+new	GRCh37	12	jga_snp	61276	61276	0	match		
+new	GRCh37	13	jga_snp	47596	47596	0	match		
+new	GRCh37	14	jga_snp	40651	40651	0	match		
+new	GRCh37	15	jga_snp	38091	38091	0	match		
+new	GRCh37	16	jga_snp	39188	39188	0	match		
+new	GRCh37	17	jga_snp	31153	31153	0	match		
+new	GRCh37	18	jga_snp	37364	37364	0	match		
+new	GRCh37	19	jga_snp	21256	21256	0	match		
+new	GRCh37	20	jga_snp	31427	31427	0	match		
+new	GRCh37	21	jga_snp	18204	18204	0	match		
+new	GRCh37	22	jga_snp	16423	16423	0	match		
+new	GRCh37	MT	jga_snp	5	0	-5	api_missing	VCFは存在するがAPI dataset/chromosomeが未投入、alias漏れ、または公開対象外	ETL投入ログ、index、alias、公開対象設定を確認
+new	GRCh37	X	jga_snp	13258	13258	0	match		
+new	GRCh37	Y	jga_snp	0	0	0	match		
+new	GRCh37	1	jga_wes	381530	381530	0	match		
+new	GRCh37	2	jga_wes	363407	363407	0	match		
+new	GRCh37	3	jga_wes	301484	301484	0	match		
+new	GRCh37	4	jga_wes	306194	306194	0	match		
+new	GRCh37	5	jga_wes	259490	259490	0	match		
+new	GRCh37	6	jga_wes	296603	296603	0	match		
+new	GRCh37	7	jga_wes	264212	264212	0	match		
+new	GRCh37	8	jga_wes	232327	232327	0	match		
+new	GRCh37	9	jga_wes	198523	198523	0	match		
+new	GRCh37	10	jga_wes	234737	234737	0	match		
+new	GRCh37	11	jga_wes	228328	228328	0	match		
+new	GRCh37	12	jga_wes	221403	221403	0	match		
+new	GRCh37	13	jga_wes	161442	161442	0	match		
+new	GRCh37	14	jga_wes	150583	150583	0	match		
+new	GRCh37	15	jga_wes	145922	145922	0	match		
+new	GRCh37	16	jga_wes	158649	158649	0	match		
+new	GRCh37	17	jga_wes	143551	143551	0	match		
+new	GRCh37	18	jga_wes	127196	127196	0	match		
+new	GRCh37	19	jga_wes	130389	130389	0	match		
+new	GRCh37	20	jga_wes	105941	105941	0	match		
+new	GRCh37	21	jga_wes	73822	73822	0	match		
+new	GRCh37	22	jga_wes	75276	75276	0	match		
+new	GRCh37	MT	jga_wes	224	0	-224	api_missing	VCFは存在するがAPI dataset/chromosomeが未投入、alias漏れ、または公開対象外	ETL投入ログ、index、alias、公開対象設定を確認
+new	GRCh37	X	jga_wes	113843	113843	0	match		
+new	GRCh37	Y	jga_wes	3949	3949	0	match		
+new	GRCh37	1	tommo	7486683	7486683	0	match		
+new	GRCh37	2	tommo	7900726	7900726	0	match		
+new	GRCh37	3	tommo	6384311	6384311	0	match		
+new	GRCh37	4	tommo	6257107	6257107	0	match		
+new	GRCh37	5	tommo	5812491	5812491	0	match		
+new	GRCh37	6	tommo	5524754	5524754	0	match		
+new	GRCh37	7	tommo	5358927	5358927	0	match		
+new	GRCh37	8	tommo	5011880	5011880	0	match		
+new	GRCh37	9	tommo	4240900	4240900	0	match		
+new	GRCh37	10	tommo	4441300	4441300	0	match		
+new	GRCh37	11	tommo	4415065	4415065	0	match		
+new	GRCh37	12	tommo	4297108	4297108	0	match		
+new	GRCh37	13	tommo	3140595	3140595	0	match		
+new	GRCh37	14	tommo	2985336	2985336	0	match		
+new	GRCh37	15	tommo	2869513	2869513	0	match		
+new	GRCh37	16	tommo	3166879	3166879	0	match		
+new	GRCh37	17	tommo	2734431	2734431	0	match		
+new	GRCh37	18	tommo	2472915	2472915	0	match		
+new	GRCh37	19	tommo	2246236	2246236	0	match		
+new	GRCh37	20	tommo	2010095	2010095	0	match		
+new	GRCh37	21	tommo	1369365	1369365	0	match		
+new	GRCh37	22	tommo	1336197	1336197	0	match		
+new	GRCh37	MT	tommo	3503	0	-3503	api_missing	VCFは存在するがAPI dataset/chromosomeが未投入、alias漏れ、または公開対象外	ETL投入ログ、index、alias、公開対象設定を確認
+new	GRCh37	X	tommo	3619534	3619534	0	match		
+new	GRCh37	Y	tommo	0	0	0	match		
+new	GRCh38	1	bbj1k	3812359	3812359	0	match		
+new	GRCh38	2	bbj1k	3601615	3601615	0	match		
+new	GRCh38	3	bbj1k	2944845	2944845	0	match		
+new	GRCh38	4	bbj1k	2815889	2815889	0	match		
+new	GRCh38	5	bbj1k	2607189	2607189	0	match		
+new	GRCh38	6	bbj1k	2501743	2501743	0	match		
+new	GRCh38	7	bbj1k	2477252	2477252	0	match		
+new	GRCh38	8	bbj1k	2166683	2166683	0	match		
+new	GRCh38	9	bbj1k	2026618	2026618	0	match		
+new	GRCh38	10	bbj1k	2159301	2159301	0	match		
+new	GRCh38	11	bbj1k	2115704	2115704	0	match		
+new	GRCh38	12	bbj1k	2068711	2068711	0	match		
+new	GRCh38	13	bbj1k	1713045	1713045	0	match		
+new	GRCh38	14	bbj1k	1311603	1311603	0	match		
+new	GRCh38	15	bbj1k	1298447	1298447	0	match		
+new	GRCh38	16	bbj1k	1409965	1409965	0	match		
+new	GRCh38	17	bbj1k	1315597	1315597	0	match		
+new	GRCh38	18	bbj1k	1271977	1271977	0	match		
+new	GRCh38	19	bbj1k	1021418	1021418	0	match		
+new	GRCh38	20	bbj1k	1082844	1082844	0	match		
+new	GRCh38	21	bbj1k	662296	662296	0	match		
+new	GRCh38	22	bbj1k	718067	718067	0	match		
+new	GRCh38	MT	bbj1k	0	0	0	match		
+new	GRCh38	X	bbj1k	1501298	1501298	0	match		
+new	GRCh38	Y	bbj1k	90016	90016	0	match		
+new	GRCh38	1	bbj2k	4724251	4724251	0	match		
+new	GRCh38	2	bbj2k	4514250	4514250	0	match		
+new	GRCh38	3	bbj2k	3681087	3681087	0	match		
+new	GRCh38	4	bbj2k	3511517	3511517	0	match		
+new	GRCh38	5	bbj2k	3274133	3274133	0	match		
+new	GRCh38	6	bbj2k	3124056	3124056	0	match		
+new	GRCh38	7	bbj2k	3084777	3084777	0	match		
+new	GRCh38	8	bbj2k	2738176	2738176	0	match		
+new	GRCh38	9	bbj2k	2465088	2465088	0	match		
+new	GRCh38	10	bbj2k	2667243	2667243	0	match		
+new	GRCh38	11	bbj2k	2588868	2588868	0	match		
+new	GRCh38	12	bbj2k	2545827	2545827	0	match		
+new	GRCh38	13	bbj2k	2087076	2087076	0	match		
+new	GRCh38	14	bbj2k	1641851	1641851	0	match		
+new	GRCh38	15	bbj2k	1601320	1601320	0	match		
+new	GRCh38	16	bbj2k	1769129	1769129	0	match		
+new	GRCh38	17	bbj2k	1628791	1628791	0	match		
+new	GRCh38	18	bbj2k	1538247	1538247	0	match		
+new	GRCh38	19	bbj2k	1282462	1282462	0	match		
+new	GRCh38	20	bbj2k	1336490	1336490	0	match		
+new	GRCh38	21	bbj2k	817359	817359	0	match		
+new	GRCh38	22	bbj2k	884987	884987	0	match		
+new	GRCh38	MT	bbj2k	0	0	0	match		
+new	GRCh38	X	bbj2k	1690983	1690983	0	match		
+new	GRCh38	Y	bbj2k	146216	146216	0	match		
+new	GRCh38	1	gem_j_wga	7375625	7375625	0	match		
+new	GRCh38	2	gem_j_wga	7965702	7965702	0	match		
+new	GRCh38	3	gem_j_wga	6444667	6444667	0	match		
+new	GRCh38	4	gem_j_wga	6311189	6311189	0	match		
+new	GRCh38	5	gem_j_wga	5873703	5873703	0	match		
+new	GRCh38	6	gem_j_wga	5573808	5573808	0	match		
+new	GRCh38	7	gem_j_wga	5407461	5407461	0	match		
+new	GRCh38	8	gem_j_wga	5052154	5052154	0	match		
+new	GRCh38	9	gem_j_wga	4223436	4223436	0	match		
+new	GRCh38	10	gem_j_wga	4476507	4476507	0	match		
+new	GRCh38	11	gem_j_wga	4466587	4466587	0	match		
+new	GRCh38	12	gem_j_wga	4347793	4347793	0	match		
+new	GRCh38	13	gem_j_wga	3171119	3171119	0	match		
+new	GRCh38	14	gem_j_wga	2966728	2966728	0	match		
+new	GRCh38	15	gem_j_wga	2878469	2878469	0	match		
+new	GRCh38	16	gem_j_wga	3188737	3188737	0	match		
+new	GRCh38	17	gem_j_wga	2758363	2758363	0	match		
+new	GRCh38	18	gem_j_wga	2492360	2492360	0	match		
+new	GRCh38	19	gem_j_wga	2269090	2269090	0	match		
+new	GRCh38	20	gem_j_wga	2031178	2031178	0	match		
+new	GRCh38	21	gem_j_wga	1373532	1373532	0	match		
+new	GRCh38	22	gem_j_wga	1340635	1340635	0	match		
+new	GRCh38	MT	gem_j_wga	0	0	0	match		
+new	GRCh38	X	gem_j_wga	3506731	3506731	0	match		
+new	GRCh38	Y	gem_j_wga	0	0	0	match		
+new	GRCh38	1	gnomad_exomes	17671166	17671166	0	match		
+new	GRCh38	2	gnomad_exomes	12963790	12963790	0	match		
+new	GRCh38	3	gnomad_exomes	10208074	10208076	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	4	gnomad_exomes	7252480	7252480	0	match		
+new	GRCh38	5	gnomad_exomes	8156768	8156768	0	match		
+new	GRCh38	6	gnomad_exomes	8573431	8573431	0	match		
+new	GRCh38	7	gnomad_exomes	9233605	9233607	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	8	gnomad_exomes	6800080	6800081	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	9	gnomad_exomes	7476742	7476742	0	match		
+new	GRCh38	10	gnomad_exomes	7210142	7210142	0	match		
+new	GRCh38	11	gnomad_exomes	10526961	10526962	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	12	gnomad_exomes	9855795	9855795	0	match		
+new	GRCh38	13	gnomad_exomes	3549139	3549140	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	14	gnomad_exomes	6268134	6268134	0	match		
+new	GRCh38	15	gnomad_exomes	7010578	7010578	0	match		
+new	GRCh38	16	gnomad_exomes	8785927	8785928	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	17	gnomad_exomes	10744750	10744750	0	match		
+new	GRCh38	18	gnomad_exomes	3246732	3246732	0	match		
+new	GRCh38	19	gnomad_exomes	11706291	11706291	0	match		
+new	GRCh38	20	gnomad_exomes	4616728	4616729	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	21	gnomad_exomes	2188842	2188842	0	match		
+new	GRCh38	22	gnomad_exomes	4845198	4845199	1	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	MT	gnomad_exomes	0	0	0	match		
+new	GRCh38	X	gnomad_exomes	4685140	4685140	0	match		
+new	GRCh38	Y	gnomad_exomes	140758	140758	0	match		
+new	GRCh38	1	gnomad_genomes	59159992	59160006	14	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	2	gnomad_genomes	62931847	62931878	31	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	3	gnomad_genomes	51234994	51235008	14	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	4	gnomad_genomes	50142307	50142330	23	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	5	gnomad_genomes	46410769	46410785	16	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	6	gnomad_genomes	43703134	43703160	26	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	7	gnomad_genomes	42466650	42466679	29	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	8	gnomad_genomes	39939290	39939308	18	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	9	gnomad_genomes	33833687	33833698	11	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	10	gnomad_genomes	35497568	35497598	30	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	11	gnomad_genomes	35080661	35080671	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	12	gnomad_genomes	34332157	34332175	18	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	13	gnomad_genomes	24993762	24993777	15	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	14	gnomad_genomes	23568668	23568672	4	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	15	gnomad_genomes	22225830	22225848	18	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	16	gnomad_genomes	24719904	24719921	17	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	17	gnomad_genomes	21944440	21944455	15	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	18	gnomad_genomes	19467702	19467717	15	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	19	gnomad_genomes	17293254	17293274	20	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	20	gnomad_genomes	16355687	16355695	8	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	21	gnomad_genomes	10958882	10958898	16	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	22	gnomad_genomes	11608132	11608143	11	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	MT	gnomad_genomes	0	0	0	match		
+new	GRCh38	X	gnomad_genomes	30297551	30297561	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	Y	gnomad_genomes	1169063	1169063	0	match		
+new	GRCh38	1	jga_snp	99369	99369	0	match		
+new	GRCh38	2	jga_snp	100919	100919	0	match		
+new	GRCh38	3	jga_snp	85641	85641	0	match		
+new	GRCh38	4	jga_snp	77187	77187	0	match		
+new	GRCh38	5	jga_snp	78156	78156	0	match		
+new	GRCh38	6	jga_snp	86820	86820	0	match		
+new	GRCh38	7	jga_snp	67888	67888	0	match		
+new	GRCh38	8	jga_snp	67771	67771	0	match		
+new	GRCh38	9	jga_snp	60025	60025	0	match		
+new	GRCh38	10	jga_snp	67000	67000	0	match		
+new	GRCh38	11	jga_snp	63024	63024	0	match		
+new	GRCh38	12	jga_snp	61276	61276	0	match		
+new	GRCh38	13	jga_snp	47591	47591	0	match		
+new	GRCh38	14	jga_snp	40651	40651	0	match		
+new	GRCh38	15	jga_snp	38091	38091	0	match		
+new	GRCh38	16	jga_snp	39188	39188	0	match		
+new	GRCh38	17	jga_snp	31152	31152	0	match		
+new	GRCh38	18	jga_snp	37364	37364	0	match		
+new	GRCh38	19	jga_snp	21251	21251	0	match		
+new	GRCh38	20	jga_snp	31427	31427	0	match		
+new	GRCh38	21	jga_snp	18204	18204	0	match		
+new	GRCh38	22	jga_snp	16422	16422	0	match		
+new	GRCh38	MT	jga_snp	4	0	-4	api_missing	VCFは存在するがAPI dataset/chromosomeが未投入、alias漏れ、または公開対象外	ETL投入ログ、index、alias、公開対象設定を確認
+new	GRCh38	X	jga_snp	13250	13250	0	match		
+new	GRCh38	Y	jga_snp	0	0	0	match		
+new	GRCh38	1	jga_wes	375309	375309	0	match		
+new	GRCh38	2	jga_wes	363010	363010	0	match		
+new	GRCh38	3	jga_wes	301409	301409	0	match		
+new	GRCh38	4	jga_wes	306157	306157	0	match		
+new	GRCh38	5	jga_wes	259486	259486	0	match		
+new	GRCh38	6	jga_wes	296346	296346	0	match		
+new	GRCh38	7	jga_wes	263893	263893	0	match		
+new	GRCh38	8	jga_wes	232218	232218	0	match		
+new	GRCh38	9	jga_wes	198071	198071	0	match		
+new	GRCh38	10	jga_wes	234603	234603	0	match		
+new	GRCh38	11	jga_wes	228275	228275	0	match		
+new	GRCh38	12	jga_wes	221380	221380	0	match		
+new	GRCh38	13	jga_wes	161366	161366	0	match		
+new	GRCh38	14	jga_wes	149603	149603	0	match		
+new	GRCh38	15	jga_wes	145551	145551	0	match		
+new	GRCh38	16	jga_wes	158427	158427	0	match		
+new	GRCh38	17	jga_wes	143371	143371	0	match		
+new	GRCh38	18	jga_wes	127191	127191	0	match		
+new	GRCh38	19	jga_wes	130094	130094	0	match		
+new	GRCh38	20	jga_wes	105925	105925	0	match		
+new	GRCh38	21	jga_wes	73815	73815	0	match		
+new	GRCh38	22	jga_wes	75066	75066	0	match		
+new	GRCh38	MT	jga_wes	54	0	-54	api_missing	VCFは存在するがAPI dataset/chromosomeが未投入、alias漏れ、または公開対象外	ETL投入ログ、index、alias、公開対象設定を確認
+new	GRCh38	X	jga_wes	113510	113510	0	match		
+new	GRCh38	Y	jga_wes	3945	3945	0	match		
+new	GRCh38	1	jga_wgs	6227127	6227127	0	match		
+new	GRCh38	2	jga_wgs	5901536	5901536	0	match		
+new	GRCh38	3	jga_wgs	4778662	4778662	0	match		
+new	GRCh38	4	jga_wgs	4537482	4537482	0	match		
+new	GRCh38	5	jga_wgs	4250794	4250794	0	match		
+new	GRCh38	6	jga_wgs	4020550	4020550	0	match		
+new	GRCh38	7	jga_wgs	4017103	4017103	0	match		
+new	GRCh38	8	jga_wgs	3555922	3555922	0	match		
+new	GRCh38	9	jga_wgs	3249685	3249685	0	match		
+new	GRCh38	10	jga_wgs	3479015	3479015	0	match		
+new	GRCh38	11	jga_wgs	3419860	3419860	0	match		
+new	GRCh38	12	jga_wgs	3350436	3350436	0	match		
+new	GRCh38	13	jga_wgs	2731851	2731851	0	match		
+new	GRCh38	14	jga_wgs	2126227	2126227	0	match		
+new	GRCh38	15	jga_wgs	2099081	2099081	0	match		
+new	GRCh38	16	jga_wgs	2326759	2326759	0	match		
+new	GRCh38	17	jga_wgs	2158647	2158647	0	match		
+new	GRCh38	18	jga_wgs	2038106	2038106	0	match		
+new	GRCh38	19	jga_wgs	1687613	1687613	0	match		
+new	GRCh38	20	jga_wgs	1747194	1747194	0	match		
+new	GRCh38	21	jga_wgs	1049885	1049885	0	match		
+new	GRCh38	22	jga_wgs	1149134	1149134	0	match		
+new	GRCh38	MT	jga_wgs	0	0	0	match		
+new	GRCh38	X	jga_wgs	2300610	2300610	0	match		
+new	GRCh38	Y	jga_wgs	180330	180330	0	match		
+new	GRCh38	1	jogo	1431050	1431073	23	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	2	jogo	1227307	1227326	19	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	3	jogo	1058730	1058734	4	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	4	jogo	828753	828760	7	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	5	jogo	810951	810957	6	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	6	jogo	868177	868188	11	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	7	jogo	899769	899782	13	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	8	jogo	759948	759963	15	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	9	jogo	679665	679672	7	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	10	jogo	792281	792291	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	11	jogo	812181	812193	12	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	12	jogo	800198	800208	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	13	jogo	396116	396122	6	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	14	jogo	481241	481246	5	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	15	jogo	545984	545986	2	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	16	jogo	607075	607099	24	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	17	jogo	674983	674998	15	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	18	jogo	358628	358638	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	19	jogo	676188	676209	21	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	20	jogo	386327	386334	7	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	21	jogo	169859	169868	9	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	22	jogo	307899	307902	3	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	MT	jogo	0	0	0	match		
+new	GRCh38	X	jogo	601829	601839	10	count_mismatch	VCF exportとAPI indexのfilter、normalize、重複排除、または投入状態が不一致	同じdataset/chromosomeのallele集合を段階別に照合
+new	GRCh38	Y	jogo	12246	12246	0	match		
+new	GRCh38	1	ncbn	17503373	17503373	0	match		
+new	GRCh38	2	ncbn	17850346	17850346	0	match		
+new	GRCh38	3	ncbn	14433780	14433780	0	match		
+new	GRCh38	4	ncbn	13989769	13989769	0	match		
+new	GRCh38	5	ncbn	13086137	13086137	0	match		
+new	GRCh38	6	ncbn	12045151	12045151	0	match		
+new	GRCh38	7	ncbn	12015226	12015226	0	match		
+new	GRCh38	8	ncbn	11099692	11099692	0	match		
+new	GRCh38	9	ncbn	9565690	9565690	0	match		
+new	GRCh38	10	ncbn	10214634	10214634	0	match		
+new	GRCh38	11	ncbn	10090364	10090364	0	match		
+new	GRCh38	12	ncbn	9889872	9889872	0	match		
+new	GRCh38	13	ncbn	7730705	7730705	0	match		
+new	GRCh38	14	ncbn	6502505	6502505	0	match		
+new	GRCh38	15	ncbn	6191485	6191485	0	match		
+new	GRCh38	16	ncbn	6998477	6998477	0	match		
+new	GRCh38	17	ncbn	6230996	6230996	0	match		
+new	GRCh38	18	ncbn	6007889	6007889	0	match		
+new	GRCh38	19	ncbn	4623141	4623141	0	match		
+new	GRCh38	20	ncbn	5024600	5024600	0	match		
+new	GRCh38	21	ncbn	3123154	3123154	0	match		
+new	GRCh38	22	ncbn	3272572	3272572	0	match		
+new	GRCh38	MT	ncbn	0	0	0	match		
+new	GRCh38	X	ncbn	8239474	8239474	0	match		
+new	GRCh38	Y	ncbn	0	0	0	match		
+new	GRCh38	1	tommo	37457699	37457699	0	match		
+new	GRCh38	2	tommo	34791393	34791393	0	match		
+new	GRCh38	3	tommo	27638943	27638943	0	match		
+new	GRCh38	4	tommo	25942077	25942077	0	match		
+new	GRCh38	5	tommo	24851567	24851567	0	match		
+new	GRCh38	6	tommo	23313083	23313083	0	match		
+new	GRCh38	7	tommo	24357189	24357189	0	match		
+new	GRCh38	8	tommo	20780444	20780444	0	match		
+new	GRCh38	9	tommo	19222474	19222474	0	match		
+new	GRCh38	10	tommo	20457250	20457250	0	match		
+new	GRCh38	11	tommo	20455381	20455381	0	match		
+new	GRCh38	12	tommo	20756498	20756498	0	match		
+new	GRCh38	13	tommo	15831852	15831852	0	match		
+new	GRCh38	14	tommo	12755155	12755155	0	match		
+new	GRCh38	15	tommo	12536315	12536315	0	match		
+new	GRCh38	16	tommo	14687841	14687841	0	match		
+new	GRCh38	17	tommo	14378198	14378198	0	match		
+new	GRCh38	18	tommo	11788820	11788820	0	match		
+new	GRCh38	19	tommo	12850979	12850979	0	match		
+new	GRCh38	20	tommo	10735429	10735429	0	match		
+new	GRCh38	21	tommo	6078394	6078394	0	match		
+new	GRCh38	22	tommo	7418385	7418385	0	match		
+new	GRCh38	MT	tommo	0	0	0	match		
+new	GRCh38	X	tommo	16519805	16519805	0	match		
+new	GRCh38	Y	tommo	0	0	0	match		
+new	GRCh38	1	tommo_jsv1	6129	6129	0	match		
+new	GRCh38	2	tommo_jsv1	5502	5502	0	match		
+new	GRCh38	3	tommo_jsv1	4102	4102	0	match		
+new	GRCh38	4	tommo_jsv1	4488	4488	0	match		
+new	GRCh38	5	tommo_jsv1	4181	4181	0	match		
+new	GRCh38	6	tommo_jsv1	4034	4034	0	match		
+new	GRCh38	7	tommo_jsv1	4588	4588	0	match		
+new	GRCh38	8	tommo_jsv1	3313	3313	0	match		
+new	GRCh38	9	tommo_jsv1	3603	3603	0	match		
+new	GRCh38	10	tommo_jsv1	3740	3740	0	match		
+new	GRCh38	11	tommo_jsv1	3186	3186	0	match		
+new	GRCh38	12	tommo_jsv1	3260	3260	0	match		
+new	GRCh38	13	tommo_jsv1	2743	2743	0	match		
+new	GRCh38	14	tommo_jsv1	1984	1984	0	match		
+new	GRCh38	15	tommo_jsv1	2170	2170	0	match		
+new	GRCh38	16	tommo_jsv1	2702	2702	0	match		
+new	GRCh38	17	tommo_jsv1	2819	2819	0	match		
+new	GRCh38	18	tommo_jsv1	2101	2101	0	match		
+new	GRCh38	19	tommo_jsv1	2260	2260	0	match		
+new	GRCh38	20	tommo_jsv1	2145	2145	0	match		
+new	GRCh38	21	tommo_jsv1	1609	1609	0	match		
+new	GRCh38	22	tommo_jsv1	1683	1683	0	match		
+new	GRCh38	MT	tommo_jsv1	0	0	0	match		
+new	GRCh38	X	tommo_jsv1	0	0	0	match		
+new	GRCh38	Y	tommo_jsv1	0	0	0	match		
