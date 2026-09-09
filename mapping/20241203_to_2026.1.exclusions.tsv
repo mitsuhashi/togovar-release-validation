@@ -1,0 +1,3 @@
+old_relative_path	status	reason
+grch37/frequency/vcf/mgend/mgend.grch37.vcf.gz	pending	新版VCFの追加待ち。追加後に対応表を再生成する
+grch38/frequency/vcf/tommo/tommo_54kjpn.chrMT.grch38.vcf.gz	ignored	ユーザー確認により今回の比較対象外

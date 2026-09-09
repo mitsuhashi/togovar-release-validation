@@ -1,0 +1,16 @@
+assemblies: [GRCh37]
+staging_urls: [https://stg-grch37.togovar.org]
+chromosomes: ["1", "2"]
+chromosomes_csv: 1,2
+vcf_releases: [new]
+vcf_assemblies: [GRCh37]
+vcf_datasets: [test]
+vcf_reference_fastas:
+  - class: File
+    path: /mnt/nas05/togovar/original/grch37/reference_genome/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+vcf_groups:
+  - - class: File
+      path: /data/togovar/etl/togovar-etl/2026.1/results/20241203_to_2026.1/normalization-cwl-smoke/input/new.vcf.gz
+chrom_map:
+  class: File
+  path: ../../cwl/rename_chrom.tsv

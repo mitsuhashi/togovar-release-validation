@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# CWL runner caches and generated validation results
+results/
+tmp/
+*.tmp
+
+# Toil execution state
+toil-jobstore/

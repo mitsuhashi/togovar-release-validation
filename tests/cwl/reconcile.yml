@@ -1,0 +1,6 @@
+api_counts:
+  - class: File
+    path: test.GRCh38.staging-api-counts.tsv
+vcf_counts:
+  - class: File
+    path: ../../results/20241203_to_2026.1/api-vcf-unit/new.GRCh38.test.vcf-counts.tsv

@@ -1,0 +1,13 @@
+old_vcf:
+  class: File
+  path: /data/togovar/etl/togovar-etl/2026.1/results/20241203_to_2026.1/normalization-cwl-smoke/input/old.vcf.gz
+new_vcfs:
+  - class: File
+    path: /data/togovar/etl/togovar-etl/2026.1/results/20241203_to_2026.1/normalization-cwl-smoke/input/new.vcf.gz
+chrom_map:
+  class: File
+  path: /data/togovar/etl/togovar-etl/2026.1/cwl/rename_chrom.tsv
+reference_fasta:
+  class: File
+  path: /mnt/nas05/togovar/original/grch37/reference_genome/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+pair_id: grch37/frequency/vcf/gem_j_wga/gem_j_wga.chr1.grch37.vcf.gz
