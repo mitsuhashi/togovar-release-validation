@@ -159,16 +159,23 @@ GRCh37参照を`GRCh37.hg19.canonical.fa`へ変更し、現在の`job.refnorm.js
 - API件数がVCF件数より多い差の合計：679
 - 絶対差の合計：4,486
 
-不一致の内訳を示す。差の符号は`VCF件数 - API件数`である。
+不一致の内訳を示す。差の方向は正規化済みユニークallele数の比較による。
 
-| assembly | dataset | 不一致染色体 | 差 |
-|---|---|---|---|
-| GRCh37 | `gem_j_wga` | 2, 3, 4, 6, 7, 10, 11, 16, 17, 19, 20, 21, X | VCFが1～3件多い |
-| GRCh37 | `gnomad_genomes` | 1, 2, 3, 5, 10, 11, 12, 13, 16, 17, 19, 21, 22 | VCFが1～5件少ない |
-| GRCh37 | `gnomad_exomes` | 1 | VCFが1件少ない |
-| GRCh37 | `jga_snp` | MT | VCF 5件、API 0件 |
-| GRCh37 | `jga_wes` | MT | VCF 224件、API 0件 |
-| GRCh37 | `tommo` | MT | VCF 3,503件、API 0件 |
+| assembly | dataset | 不一致区分数 | 不一致染色体 | 差の方向・範囲 |
+|---|---|---:|---|---|
+| GRCh37 | `gem_j_wga` | 13 | 2, 3, 4, 6, 7, 10, 11, 16, 17, 19, 20, 21, X | VCFが1～3件多い |
+| GRCh37 | `gnomad_exomes` | 1 | 1 | APIが1件多い |
+| GRCh37 | `gnomad_genomes` | 13 | 1, 2, 3, 5, 10, 11, 12, 13, 16, 17, 19, 21, 22 | APIが1～5件多い |
+| GRCh37 | `jga_snp` | 1 | MT | VCF 5件、API 0件 |
+| GRCh37 | `jga_wes` | 1 | MT | VCF 224件、API 0件 |
+| GRCh37 | `tommo` | 1 | MT | VCF 3,503件、API 0件 |
+| GRCh38 | `gnomad_exomes` | 8 | 3, 7, 8, 11, 13, 16, 20, 22 | APIが1～2件多い |
+| GRCh38 | `gnomad_genomes` | 23 | 1～22, X | APIが4～31件多い |
+| GRCh38 | `jga_snp` | 1 | MT | VCF 4件、API 0件 |
+| GRCh38 | `jga_wes` | 1 | MT | VCF 54件、API 0件 |
+| GRCh38 | `jogo` | 23 | 1～22, X | APIが2～24件多い |
+
+GRCh37の不一致は30区分、GRCh38の不一致は56区分であり、合計86区分である。
 
 正式結果は`api-vcf-final/api-vcf-counts.tsv`と
 `api-vcf-final/api-vcf-mismatches.tsv`を参照する。
