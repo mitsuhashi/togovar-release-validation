@@ -194,6 +194,16 @@ cwl/release_vcf_keys.cwl \
 結果ファイルが増えない場合は、そのプロセスを停止し、datasetごと・最大50論理比較ごとに
 分割して**逐次**実行します。既存の`--cachedir`を使うため、完了済み比較は再利用されます。
 
+簡易実行には`cwl/run_dataset.sh`を使えます。完了済みbatchの`*.summary.tsv`を検出して
+スキップし、未完了のbatchだけを逐次実行します。
+
+```bash
+chmod 755 cwl/run_dataset.sh
+cwl/run_dataset.sh grch37-tommo grch37/frequency/vcf/tommo/
+```
+
+同じdatasetを実行中の場合は、完了するまでこのコマンドを起動しないでください。
+
 次はGRCh37 `tommo`の例です。`split_manifest.py`は同じ旧VCFに対応する複数の新版VCFを
 同じbatchに保持するため、1対多比較を分断しません。
 
