@@ -23,6 +23,7 @@ keys() {
   bcftools annotate --rename-chrs "$chrom_map" -Ou "$input_vcf" \
     | bcftools norm -f "$reference_fasta" --check-ref w -m -any -Ou 2> "$norm_log" \
     | bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\n' \
+    | awk 'BEGIN { OFS="\t" } { print $1, $2, toupper($3), toupper($4) }' \
     | sort -T "$TMPDIR" -u
   awk -v OFS='\t' -v source="$source_label" -v input="$input_vcf" \
     '/^(Reference allele mismatch|REF_MISMATCH)/ {print source,input,$0}' "$norm_log" >> "$reference_mismatch_file"
