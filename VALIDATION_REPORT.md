@@ -6,9 +6,14 @@
 すべて完了したが、GRCh38の3比較で旧版にのみ存在するalleleが合計535件検出された。
 また、2026.1 VCFとstaging APIの比較では、450区分中86区分に件数不一致が残っている。
 
+535件のうちGRCh38 `jga_wes`の532件は、2026.1 VCF生成時に
+`liftover_failed_grch38.vcf.gz`との一致レコードを除外した結果であることを確認した。
+532件すべてがこの除外リストに含まれ、説明できない欠落は0件だった。liftover失敗variantを
+除外する方針が承認されれば意図的削除としてallow-list化できるが、現時点では承認待ちである。
+
 | 検査 | 実行結果 | 結論 |
 |---|---|---|
-| 20241203 VCFと2026.1 VCF | 対象1,423比較中1,420比較は`old - new = 0`。GRCh38 `gem_j_wga`で3件、GRCh38 `jga_wes`で532件、合計535件の旧版のみalleleを検出 | 原因確認と修正後の再検証が必要 |
+| 20241203 VCFと2026.1 VCF | 対象1,423比較中1,420比較は`old - new = 0`。GRCh38 `gem_j_wga`で3件、GRCh38 `jga_wes`で532件、合計535件の旧版のみalleleを検出 | 532件はliftover失敗variantの除外。意図的削除の承認と、残る3件の原因確認が必要 |
 | 2026.1 VCFとstaging API | 450区分中364区分が一致、86区分が不一致 | APIへの反映経路の調査が必要 |
 
 VCF比較のmanifestは全1,974比較だが、GRCh38 `gnomad_exomes` 240比較、
@@ -170,6 +175,39 @@ GRCh38 `jga_wes`の532件は、chromosome 7の12件
 を参照する。
 旧VCFには上記例のレコードが存在し、2026.1 VCFの同一座位周辺には存在しないことを確認した。
 
+##### GRCh38 `jga_wes` 532件の原因
+
+2026.1 `jga_wes` VCFのヘッダーには、元のGRCh38 VCFからliftover失敗リストとの
+一致レコードを除外した生成履歴が記録されている。
+
+```text
+bcftools isec --complement --write 1 \
+  --output /home/togovar/data/datasets/vcf/GRCh38/jga_wes/jga_wes.grch38.rm-failed.vcf.gz \
+  /home/togovar/data/datasets/vcf/GRCh38/jga_wes/jga_wes.grch38.vcf.gz \
+  /mnt/nas05/dsatoh/work/scripts/datasets/lift_over_fix/liftover_failed_grch38.vcf.gz
+```
+
+除外判定に使われたVCFは次のとおりである。
+
+```text
+/mnt/nas05/dsatoh/work/scripts/datasets/lift_over_fix/liftover_failed_grch38.vcf.gz
+```
+
+このVCFをリリース間比較と同じ手順でcontig名統一、left alignment、multi-ALT分解、
+REF/ALT大文字化してから、532件の`missing.tsv`と完全照合した。
+
+| 照合項目 | 件数 |
+|---|---:|
+| GRCh38 `jga_wes`の`old - new` | 532 |
+| liftover失敗リストに存在 | 532 |
+| liftover失敗リストで説明できないもの | **0** |
+
+したがって、532件は単純な投入漏れではなく、2026.1生成工程におけるliftover失敗variantの
+除外によるものである。liftover失敗variantを除外するリリース方針が妥当と承認された場合は、
+532件を理由付きallow-listへ登録し、意図的削除として扱う。方針外である場合、または
+liftover失敗判定自体が不適切な場合は、`liftover_failed_grch38.vcf.gz`の生成条件と
+元データのassembly対応を修正し、2026.1 VCFを再生成して同じ比較を再実行する。
+
 #### 大小文字差とREF不一致の扱い
 
 GRCh37 `jga_snp`では、修正前の比較で121件が検出されたが、旧版の正規化後REF/ALTが
@@ -304,8 +342,10 @@ alias反映の各段階でMTが存在するかを順に確認する。
 | 2. 2026.1 VCF/API比較 | 全450行が一致し、不一致ファイルがheaderのみ |
 
 検査1は今回の対象1,423比較を完了したが、3比較に旧版のみのalleleが合計535件残っている。
-また、検査2は完了したものの86行の件数不一致が残っている。そのため、現時点の
-リリース整合性検証は不合格であり、差分原因の確認と修正後の再検証が必要である。
+このうちGRCh38 `jga_wes`の532件はliftover失敗variantの除外で説明できるが、意図的削除として
+扱う承認が必要である。GRCh38 `gem_j_wga`の3件は原因未確定である。また、検査2は完了した
+ものの86行の件数不一致が残っている。そのため、現時点のリリース整合性検証は不合格であり、
+未解決差分の原因確認、意図的削除の承認、および必要な修正後の再検証が必要である。
 
 ## 6. 再実行方法と成果物
 
